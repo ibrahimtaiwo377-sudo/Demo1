@@ -6,176 +6,203 @@
   <title>Hollas Eatery Center - Sagamu, Ogun State</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Custom scrollbar for better UX */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: #fb923c; /* orange-400 */
-      border-radius: 4px;
+    /* Custom orange theme */
+    :root {
+      --orange: #f97316;
+      --orange-dark: #c2410c;
     }
   </style>
 </head>
-<body class="bg-orange-50 text-orange-900 font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
+  <!-- Header -->
   <header class="bg-orange-500 text-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
       <h1 class="text-3xl font-extrabold tracking-wide">Hollas Eatery Center</h1>
-      <nav class="space-x-6 text-lg font-semibold">
+      <nav class="mt-3 md:mt-0 space-x-6 text-lg font-semibold">
         <a href="#menu" class="hover:underline">Menu</a>
         <a href="#jobs" class="hover:underline">Jobs</a>
-        <a href="#delivery" class="hover:underline">Delivery</a>
+        <a href="#order" class="hover:underline">Order & Delivery</a>
         <a href="#contact" class="hover:underline">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-6 py-10">
-    <section class="mb-12 text-center">
-      <h2 class="text-4xl font-extrabold mb-4">Welcome to Hollas Eatery Center</h2>
-      <p class="text-lg max-w-3xl mx-auto leading-relaxed">
-        Located in Sagamu, Ogun State, Hollas is a well-known eatery center offering a well-equipped and beautifully furnished dining experience. Enjoy a variety of delicious dishes, turkeys, drinks, cakes, doughnuts, sausages, and more — all at affordable prices. We create job opportunities and deliver fresh food right to your doorstep.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="bg-orange-50 py-16 px-6 text-center max-w-5xl mx-auto">
+    <h2 class="text-4xl font-extrabold mb-4 text-orange-600">Welcome to Hollas Eatery Center</h2>
+    <p class="text-lg max-w-3xl mx-auto mb-8">
+      Located in Sagamu, Ogun State, Hollas is a well-known eatery center offering a well-equipped and furnished dining experience.
+      Enjoy a variety of delicious dishes, turkeys, drinks, cakes, doughnuts, sausages, and more — all at affordable prices.
+    </p>
+    <p class="text-orange-700 font-semibold mb-6">Healthy cooking utensils, professional chefs, and fresh plates ensure quality every time.</p>
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c4a7f0a?auto=format&fit=crop&w=800&q=80" alt="Hollas Eatery Center" class="mx-auto rounded-lg shadow-lg max-w-full h-64 object-cover" />
+  </section>
 
-    <section id="menu" class="mb-16">
-      <h3 class="text-3xl font-bold mb-6 border-b-4 border-orange-400 inline-block pb-1">Our Menu</h3>
+  <!-- Menu Section -->
+  <section id="menu" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold text-orange-600 mb-8 text-center">Our Menu & Prices</h3>
 
-      <div class="grid md:grid-cols-3 gap-10">
-        <!-- Dishes -->
-        <div>
-          <h4 class="text-2xl font-semibold mb-3 border-b-2 border-orange-300 pb-1">Dishes & Turkeys</h4>
-          <ul class="space-y-2 text-orange-800">
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Jollof Rice with Turkey</span>
-              <span>₦2,500</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Fried Rice & Chicken</span>
-              <span>₦2,200</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Ofada Rice & Assorted Meat</span>
-              <span>₦2,800</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Grilled Turkey (per kg)</span>
-              <span>₦5,000</span>
-            </li>
-          </ul>
-        </div>
+    <div class="grid md:grid-cols-3 gap-10">
 
-        <!-- Drinks -->
-        <div>
-          <h4 class="text-2xl font-semibold mb-3 border-b-2 border-orange-300 pb-1">Drinks</h4>
-          <ul class="space-y-2 text-orange-800">
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Zobo Drink (500ml)</span>
-              <span>₦500</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Chapman (Glass)</span>
-              <span>₦700</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Fresh Orange Juice</span>
-              <span>₦600</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Bottled Water (600ml)</span>
-              <span>₦300</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Cakes, Doughnuts & Sausages -->
-        <div>
-          <h4 class="text-2xl font-semibold mb-3 border-b-2 border-orange-300 pb-1">Cakes, Doughnuts & Sausages</h4>
-          <ul class="space-y-2 text-orange-800">
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Chocolate Cake (Slice)</span>
-              <span>₦800</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Vanilla Doughnut</span>
-              <span>₦400</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Spicy Sausage Roll</span>
-              <span>₦900</span>
-            </li>
-            <li class="flex justify-between border-b border-orange-200 pb-1">
-              <span>Assorted Pastries</span>
-              <span>₦1,200</span>
-            </li>
-          </ul>
-        </div>
+      <!-- Dishes & Turkeys -->
+      <div class="bg-orange-50 rounded-lg shadow p-6">
+        <h4 class="text-2xl font-semibold mb-4 border-b border-orange-300 pb-2">Dishes & Turkeys</h4>
+        <ul class="space-y-3 text-lg">
+          <li class="flex justify-between"><span>Jollof Rice with Turkey</span> <span>₦2,500</span></li>
+          <li class="flex justify-between"><span>Fried Rice with Turkey</span> <span>₦2,500</span></li>
+          <li class="flex justify-between"><span>Amala & Ewedu with Turkey</span> <span>₦2,000</span></li>
+          <li class="flex justify-between"><span>Ofada Rice & Turkey</span> <span>₦2,800</span></li>
+        </ul>
       </div>
-    </section>
 
-    <section id="jobs" class="mb-16 bg-orange-100 rounded-lg p-8 shadow-md">
-      <h3 class="text-3xl font-bold mb-4 border-b-4 border-orange-400 inline-block pb-1">Job Opportunities</h3>
-      <p class="mb-4 text-orange-900 max-w-3xl">
-        Hollas Eatery Center is proud to create sustainable job opportunities in Sagamu, including positions for security officers, chefs, wait staff, and delivery personnel. We ensure monthly payments and a healthy, safe working environment with modern cooking utensils and well-maintained plates.
-      </p>
-      <ul class="list-disc list-inside text-orange-800 space-y-1 max-w-3xl">
-        <li>Security Officers with monthly salary</li>
-        <li>Professional Chefs using healthy cooking utensils</li>
-        <li>Friendly wait staff serving in a well-furnished dining area</li>
-        <li>Delivery drivers ensuring your food arrives fresh and on time</li>
-      </ul>
-    </section>
+      <!-- Drinks -->
+      <div class="bg-orange-50 rounded-lg shadow p-6">
+        <h4 class="text-2xl font-semibold mb-4 border-b border-orange-300 pb-2">Drinks</h4>
+        <ul class="space-y-3 text-lg">
+          <li class="flex justify-between"><span>Zobo</span> <span>₦500</span></li>
+          <li class="flex justify-between"><span>Chapman</span> <span>₦700</span></li>
+          <li class="flex justify-between"><span>Soft Drinks (Coke, Fanta)</span> <span>₦400</span></li>
+          <li class="flex justify-between"><span>Fruit Juice</span> <span>₦600</span></li>
+        </ul>
+      </div>
 
-    <section id="delivery" class="mb-16">
-      <h3 class="text-3xl font-bold mb-6 border-b-4 border-orange-400 inline-block pb-1">Food Delivery Service</h3>
-      <p class="mb-4 max-w-3xl text-orange-900">
-        We deliver fresh, delicious food to your destination with ease. When ordering for delivery, payment is accepted via transfer only. For dining in, you can pay with cash or transfer. We accept ATM card payments and other payment methods at the center.
-      </p>
+      <!-- Cakes, Doughnuts & Sausages -->
+      <div class="bg-orange-50 rounded-lg shadow p-6">
+        <h4 class="text-2xl font-semibold mb-4 border-b border-orange-300 pb-2">Cakes, Doughnuts & Sausages</h4>
+        <ul class="space-y-3 text-lg">
+          <li class="flex justify-between"><span>Wedding & Birthday Cakes (Pastries)</span> <span>From ₦15,000</span></li>
+          <li class="flex justify-between"><span>Doughnuts (per piece)</span> <span>₦300</span></li>
+          <li class="flex justify-between"><span>Grilled Sausage</span> <span>₦800</span></li>
+          <li class="flex justify-between"><span>Assorted Pastries</span> <span>₦1,200</span></li>
+        </ul>
+      </div>
 
-      <form id="deliveryForm" class="max-w-3xl bg-orange-100 rounded-lg p-6 shadow-md" action="#" method="POST">
-        <h4 class="text-2xl font-semibold mb-4">Delivery Order Form</h4>
+    </div>
+  </section>
 
-        <label for="name" class="block mb-1 font-medium text-orange-900">Full Name</label>
-        <input type="text" id="name" name="name" required class="w-full mb-4 px-3 py-2 rounded border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Your full name" />
+  <!-- Jobs Section -->
+  <section id="jobs" class="bg-orange-50 py-12 px-6 max-w-5xl mx-auto rounded-lg shadow my-12">
+    <h3 class="text-3xl font-bold text-orange-600 mb-6 text-center">Job Opportunities at Hollas</h3>
+    <p class="text-lg max-w-3xl mx-auto mb-4 text-center">
+      Hollas Eatery Center creates sustainable job opportunities including positions for security officers, chefs, wait staff, and delivery personnel.
+      We provide monthly payments and a healthy, safe working environment with quality cooking utensils and equipment.
+    </p>
+  </section>
 
-        <label for="phone" class="block mb-1 font-medium text-orange-900">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required class="w-full mb-4 px-3 py-2 rounded border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="+234 800 000 0000" />
+  <!-- Order & Delivery Section -->
+  <section id="order" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold text-orange-600 mb-8 text-center">Order & Delivery</h3>
 
-        <label for="address" class="block mb-1 font-medium text-orange-900">Delivery Address</label>
-        <textarea id="address" name="address" rows="3" required class="w-full mb-4 px-3 py-2 rounded border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Where should we deliver your food?"></textarea>
+    <div class="grid md:grid-cols-2 gap-12">
 
-        <label for="order" class="block mb-1 font-medium text-orange-900">Order Details</label>
-        <textarea id="order" name="order" rows="3" required class="w-full mb-4 px-3 py-2 rounded border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="List your food items and quantities"></textarea>
-
-        <label for="deliveryFee" class="block mb-1 font-medium text-orange-900">Delivery Fee (₦)</label>
-        <input type="number" id="deliveryFee" name="deliveryFee" min="0" required class="w-full mb-6 px-3 py-2 rounded border border-orange-300 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Enter delivery fee amount" />
-
-        <p class="mb-6 text-orange-700 italic text-sm">
-          * Payment for delivery orders is accepted via transfer only.
+      <!-- Ordering Info -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-4 border-b border-orange-300 pb-2">How to Order</h4>
+        <p class="mb-4 text-lg">
+          You can come directly to our center to eat or buy food. Payment options include cash, ATM card, bank transfer, and other electronic payments.
         </p>
+        <p class="mb-4 text-lg">
+          For delivery, payment is accepted by transfer only. Please fill the delivery form below and pay the delivery fee.
+        </p>
+        <p class="mb-4 text-lg font-semibold text-orange-700">Delivery Fee: ₦500 (within Sagamu)</p>
+      </div>
 
-        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded transition duration-300">
+      <!-- Delivery Form -->
+      <form id="deliveryForm" class="bg-orange-50 rounded-lg shadow p-6" onsubmit="return handleSubmit(event)">
+        <h4 class="text-2xl font-semibold mb-4 border-b border-orange-300 pb-2">Delivery Form</h4>
+
+        <label class="block mb-2 font-medium" for="name">Full Name</label>
+        <input class="w-full mb-4 p-2 border border-orange-300 rounded" type="text" id="name" name="name" required />
+
+        <label class="block mb-2 font-medium" for="phone">Phone Number</label>
+        <input class="w-full mb-4 p-2 border border-orange-300 rounded" type="tel" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="07012345678" />
+
+        <label class="block mb-2 font-medium" for="address">Delivery Address</label>
+        <textarea class="w-full mb-4 p-2 border border-orange-300 rounded" id="address" name="address" rows="3" required></textarea>
+
+        <label class="block mb-2 font-medium" for="orderDetails">Order Details</label>
+        <textarea class="w-full mb-4 p-2 border border-orange-300 rounded" id="orderDetails" name="orderDetails" rows="3" placeholder="Specify dishes, drinks, cakes, etc." required></textarea>
+
+        <label class="block mb-2 font-medium" for="paymentRef">Payment Reference (Transfer ID)</label>
+        <input class="w-full mb-6 p-2 border border-orange-300 rounded" type="text" id="paymentRef" name="paymentRef" required />
+
+        <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded transition">
           Submit Delivery Order
         </button>
       </form>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="mb-10 text-center">
-      <h3 class="text-3xl font-bold mb-4 border-b-4 border-orange-400 inline-block pb-1">Contact & Payment Info</h3>
-      <p class="max-w-3xl mx-auto mb-4 text-orange-900">
-        Visit us at our center in Sagamu, Ogun State to enjoy a great meal in a comfortable environment. We accept multiple payment methods including ATM cards, cash, and bank transfers.
-      </p>
-      <p class="text-orange-800 font-semibold">
-        <span class="block">📍 Address: Hollas Eatery Center, Sagamu, Ogun State</span>
-        <span class="block">📞 Phone: +234 801 234 5678</span>
-        <span class="block">💳 Payment Methods: Cash, ATM Card, Bank Transfer</span>
-      </p>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-orange-50 py-12 px-6 max-w-5xl mx-auto rounded-lg shadow my-12">
+    <h3 class="text-3xl font-bold text-orange-600 mb-8 text-center">Contact & Follow Us</h3>
 
-  <footer class="bg-orange-500 text-white text-center py-6">
-    <p class="text-sm">&copy; 2024 Hollas Eatery Center. All rights reserved.</p>
+    <div class="max-w-3xl mx-auto space-y-6 text-lg text-center">
+
+      <p>
+        <strong>Mobile / WhatsApp:</strong> <a href="tel:+2347072963412" class="text-orange-600 hover:underline">0707 296 3412</a>
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:hollas123@gmail.com" class="text-orange-600 hover:underline">hollas123@gmail.com</a>
+      </p>
+      <p>
+        <strong>Address:</strong> <a href="address to :Hollas Eatery Center, Sagamu, Ogun State"class="text-orange-600 hover:font-underline">Hollas Eatery Center Sagamu,Ogun State</a>
+        
+      </p>
+
+      <p>Follow us on social media:</p>
+      <div class="flex justify-center space-x-8 text-orange-600 text-2xl">
+        <a href="https://instagram.com/hollaswatercenter" target="_blank" aria-label="Instagram" class="hover:text-orange-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 3a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/></svg>
+        </a>
+        <a href="https://facebook.com/hollaswatercenter" target="_blank" aria-label="Facebook" class="hover:text-orange-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.87v-6.98h-2.3v-2.9h2.3v-2.2c0-2.27 1.35-3.53 3.42-3.53.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.42v1.9h2.5l-.4 2.9h-2.1v6.98A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="https://twitter.com/hollaswatercenter" target="_blank" aria-label="Twitter" class="hover:text-orange-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.45 1.32 5.44 5.44 0 00-9.27 4.96A15.44 15.44 0 012 4.15a5.44 5.44 0 001.68 7.25 5.4 5.4 0 01-2.46-.68v.07a5.44 5.44 0 004.36 5.33 5.48 5.48 0 01-2.45.09 5.44 5.44 0 005.08 3.78A10.9 10.9 0 012 19.54a15.4 15.4 0 008.29 2.43c9.95 0 15.4-8.25 15.4-15.4 0-.23 0-.46-.02-.68A11 11 0 0023 3z"/></svg>
+        </a>
+        <a href="https://t.me/hollaswatercenter" target="_blank" aria-label="Telegram" class="hover:text-orange-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M21.5 3.5L2.5 10.5l5.5 2.5 1.5 6.5 3.5-5 5.5 4.5z"/></svg>
+        </a>
+      </div>
+
+      <div class="pt-6 border-t border-orange-300 max-w-md mx-auto text-left">
+        <h4 class="text-xl font-semibold mb-2">Send Us a Message</h4>
+        <form id="messageForm" onsubmit="return handleMessageSubmit(event)" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 border border-orange-300 rounded" />
+          <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 border border-orange-300 rounded" />
+          <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 border border-orange-300 rounded"></textarea>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-500 text-white py-6 text-center font-semibold">
+    &copy; 2024 Hollas Eatery Center - Sagamu, Ogun State. All rights reserved.
   </footer>
 
+  <script>
+    // Delivery form submission handler (mock)
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for your delivery order! We will contact you shortly.');
+      event.target.reset();
+      return false;
+    }
+
+    // Message form submission handler (mock)
+    function handleMessageSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      event.target.reset();
+      return false;
+    }
+  </script>
 </body>
 </html>
+
